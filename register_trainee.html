@@ -128,7 +128,7 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Login (Trainers)</li>
+                                <li class="breadcrumb-item active" aria-current="page">Register (Trainees)</li>
                             </ol>
                         </nav>
                     </div>
@@ -138,28 +138,68 @@
     </section>
     <!-- ##### Breadcrumb Area End ##### -->
 
-   <div class="header">
-        <h2 style="color: white;">Login (Trainer)</h2>
-    </div>
-	 
-    <form method="post" action="#">
-        <div class="input-group">
-            <label>Username</label>
-            <input type="text" name="name" value="">
-            <span style="color:red;"> <?php echo $name_err;?>
-            </span>
-        </div>
-        <div class="input-group">
-            <label>Password</label>
-            <input type="password" name="password" value="">
-        </div>
-        <div class="input-group">
-            <button type="submit" class="btn" name="login_user">Login</button>
-        </div>
-        <p>
-            Not yet a member? <a href="register_trainers.html">Sign up</a>
-        </p>
-    </form>
+     <div class="header">
+  	<h2 style="color: white;">Register (Trainee)</h2>
+  </div>
+	
+  <form method="post" action="#">
+  	<div class="input-group">
+  	  <label>First Name</label>
+  	  <input type="text" name="name">
+
+  	</div>
+  	<div class="input-group">
+  	  <label>Last Name</label>
+  	  <input type="text" name="surname">
+  	</div>
+      <div class="input-group">
+  	  <label>Email</label>
+  	  <input type="email" name="email">
+  	</div>
+       <div class="input-group">
+  	  <label>Phone</label>
+  	  <input type="tel" name="phone">
+  	</div>
+       <div class="input-group">
+  	  <label>Your current education status</label>
+  	  <select name="education">
+          <option value=""> Select</option>
+           <option value="undergraduate"> Undergraduates</option>
+           <option value="Postgraduate"> Postgraduates</option>
+           <option value="Corp"> Corp member</option>
+           <option value="secondary"> Secondary School Leaver</option>
+        </select>
+  	</div> 
+      <div class="input-group">
+  	  <label>Your Location</label>
+  	  <input type="text" name="location">
+  	</div>
+      <div >
+  	  <label>Select a course <br/></label> <br>
+  	  <input type="radio" name="course" value="photo" checked/> Photography
+      <input type="radio" name="course" value="culinary" /> Culinary Art
+      <input type="radio" name="course" value="graphics" /> Graphics Design
+      <input type="radio" name="course" value="event" /> Event Management  
+      <input type="radio" name="course" value="interior" /> Interior Decoration
+      <input type="radio" name="course" value="male" /> Male Hairstyling
+      <input type="radio" name="course" value="female" /> Female Hairstyling
+          
+  	</div>
+  	<div class="input-group">
+  	  <label>Create your password</label>
+  	  <input type="password" name="password_1">
+  	</div>
+  	<div class="input-group">
+  	  <label>Confirm password</label>
+  	  <input type="password" name="password_2">
+  	</div>
+  	<div class="input-group">
+  	  <button type="submit" class="btn" name="reg_user">Register</button>
+  	</div>
+  	<p>
+  		Already a member? <a href="login.html">Sign in</a>
+  	</p>
+  </form>
 
     
 

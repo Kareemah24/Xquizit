@@ -91,14 +91,14 @@
                                     <li><a href="contact.html">Contact</a></li>
                                     <li><a href="#">Login</a>
                                         <ul class="dropdown">
-                                            <li><a href="login.html">As a trainee</a></li>
-                                            <li><a href="login.html">As a trainer</a></li>
+                                            <li><a href="login_trainees.html">As a trainee</a></li>
+                                            <li><a href="login_trainers.html">As a trainer</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">Sign Up</a>
                                         <ul class="dropdown">
-                                            <li><a href="register.html">As a trainee</a></li>
-                                            <li><a href="register.html">As a trainer</a></li>
+                                            <li><a href="register_trainee.html">As a trainee</a></li>
+                                            <li><a href="register_trainers.html">As a trainer</a></li>
                                         </ul>
                                     </li>
                                     
@@ -127,8 +127,8 @@
                         <h2>Contact</h2>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Login</li>
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Login (Trainee)</li>
                             </ol>
                         </nav>
                     </div>
@@ -139,14 +139,14 @@
     <!-- ##### Breadcrumb Area End ##### -->
 
    <div class="header">
-        <h2>Login</h2>
+        <h2 style="color: white;">Login (Trainee)</h2>
     </div>
 	 
     <form method="post" action="#">
         <div class="input-group">
             <label>Username</label>
             <input type="text" name="name" value="">
-            <span style="color:red;">* <?php echo $name_err;?>
+            <span style="color:red;"> <?php echo $name_err;?>
             </span>
         </div>
         <div class="input-group">
@@ -154,14 +154,10 @@
             <input type="password" name="password" value="">
         </div>
         <div class="input-group">
-            <label>Email</label>
-            <input type="email" name="email" value="">
-        </div>
-        <div class="input-group">
             <button type="submit" class="btn" name="login_user">Login</button>
         </div>
         <p>
-            Not yet a member? <a href="register.html">Sign up</a>
+            Not yet a member? <a href="register_trainee.html">Sign up</a>
         </p>
     </form>
 

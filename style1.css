@@ -11,7 +11,7 @@ body {
   width: 30%;
   margin: 50px auto 0px;
   color: white;
-  background: #5F9EA0;
+  background: navy;
   text-align: center;
   border: 1px solid #B0C4DE;
   border-bottom: none;
@@ -65,4 +65,9 @@ form, .content {
   background: #dff0d8; 
   border: 1px solid #3c763d;
   margin-bottom: 20px;
+}
+
+label{
+    font-style: normal;
+    font-family: sans-serif;
 }
