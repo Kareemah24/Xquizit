@@ -176,13 +176,15 @@
   	</div>
       <div >
   	  <label>Select a course <br/></label> <br>
-  	  <input type="radio" name="course" value="photo" checked/> Photography
-      <input type="radio" name="course" value="culinary" /> Culinary Art
-      <input type="radio" name="course" value="graphics" /> Graphics Design
-      <input type="radio" name="course" value="event" /> Event Management  
-      <input type="radio" name="course" value="interior" /> Interior Decoration
-      <input type="radio" name="course" value="male" /> Male Hairstyling
-      <input type="radio" name="course" value="female" /> Female Hairstyling
+          <select name="course">
+          <option value=""> Select</option>
+           <option value="Photo"> Photography</option>
+           <option value="Culinary"> Culinary Art</option>
+           <option value="Event"> Event Management</option>
+           <option value="Interior"> Interior Decoration</option>
+            <option value="Male"> Male Hairstyling</option>
+           <option value="Female"> Female Hairstyling</option>
+          </select>
           
   	</div>
   	<div class="input-group">
@@ -197,7 +199,7 @@
   	  <button type="submit" class="btn" name="reg_user">Register</button>
   	</div>
   	<p>
-  		Already a member? <a href="login.html">Sign in</a>
+  		Already a member? <a href="login_trainees.html">Sign in</a>
   	</p>
   </form>
 
